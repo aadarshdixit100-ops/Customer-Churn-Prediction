@@ -1,0 +1,6 @@
+example,test_position,customerID,predicted_probability,actual_churn,tenure,MonthlyCharges,TotalCharges,gender,SeniorCitizen,Partner,Dependents,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod
+highest_risk,1090,5178-LMXOP,0.9054239348317061,1,1,95.1,95.1,Male,Yes,Yes,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+lowest_risk,184,4277-BWBML,0.008819758742854936,0,72,19.95,1322.85,Male,No,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
+near_threshold,716,2087-QAREY,0.21969346490372796,0,22,54.7,1178.75,Female,No,Yes,No,Yes,No,DSL,No,Yes,Yes,No,No,No,Month-to-month,Yes,Mailed check
+missed_churner_FN,910,2165-VOEGB,0.13561716888170963,1,46,105.2,4822.85,Female,No,No,Yes,Yes,No,Fiber optic,Yes,Yes,No,Yes,Yes,Yes,One year,Yes,Bank transfer (automatic)
+false_alarm_FP,889,2545-EBUPK,0.8417743071791919,0,2,84.05,186.05,Female,Yes,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check

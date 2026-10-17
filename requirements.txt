@@ -1,0 +1,19 @@
+# Versions this project was developed and tested with (Python 3.12).
+# Needs Python >= 3.11 because of the numpy/pandas versions below.
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0
+xgboost==3.4.1
+lightgbm==4.7.0
+shap==0.53.0
+matplotlib==3.10.8
+seaborn==0.13.2
+joblib==1.5.3
+streamlit==1.65.0
+# notebooks + tests
+jupyter
+ipykernel==7.4.0
+nbformat==5.11.1
+nbconvert==7.17.2
+pytest==9.1.1

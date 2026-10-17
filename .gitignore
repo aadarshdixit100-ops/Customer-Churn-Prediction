@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+# OS / editor
+.DS_Store
+.vscode/
+# Data: public dataset is re-downloadable (see README); processed splits are regenerated
+data/raw/*.csv
+data/processed/*.csv

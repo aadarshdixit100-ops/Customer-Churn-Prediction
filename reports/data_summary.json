@@ -1,0 +1,19 @@
+{
+  "n_rows": 7043,
+  "n_columns": 21,
+  "n_unique_customers": 7043,
+  "churn_rate": 0.2653698707936959,
+  "n_churned": 1869,
+  "n_retained": 5174,
+  "duplicate_customer_ids": 0,
+  "duplicate_rows_ignoring_id": 22,
+  "unparsable_total_charges": 11,
+  "unparsable_total_charges_all_tenure_zero": true,
+  "missing_values_after_cleaning": 0,
+  "n_train": 5634,
+  "n_test": 1409,
+  "train_churn_rate": 0.2653532126375577,
+  "test_churn_rate": 0.2654364797728886,
+  "test_size": 0.2,
+  "random_state": 42
+}

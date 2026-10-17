@@ -1,0 +1,122 @@
+{
+  "model_name": "LightGBM",
+  "feature_set": "base",
+  "best_params": {
+    "model__reg_lambda": 5,
+    "model__num_leaves": 4,
+    "model__n_estimators": 200,
+    "model__min_child_samples": 80,
+    "model__learning_rate": 0.05,
+    "model__colsample_bytree": 0.5
+  },
+  "selection_rule": "highest CV PR-AUC (LightGBM, 0.6729); within 1 SE (0.0101) -> ['LightGBM', 'XGBoost']; simplest chosen -> LightGBM",
+  "threshold": 0.22,
+  "threshold_method": "minimise expected cost on out-of-fold development predictions",
+  "cost_assumptions": {
+    "customer_value": 400.0,
+    "intervention_cost": 25.0,
+    "intervention_success": 0.3
+  },
+  "cost_assumptions_note": "ILLUSTRATIVE - not measured from data",
+  "n_train": 5634,
+  "train_churn_rate": 0.2653532126375577,
+  "random_state": 42,
+  "schema": {
+    "categorical": {
+      "gender": [
+        "Female",
+        "Male"
+      ],
+      "SeniorCitizen": [
+        "No",
+        "Yes"
+      ],
+      "Partner": [
+        "No",
+        "Yes"
+      ],
+      "Dependents": [
+        "No",
+        "Yes"
+      ],
+      "PhoneService": [
+        "No",
+        "Yes"
+      ],
+      "MultipleLines": [
+        "No",
+        "No phone service",
+        "Yes"
+      ],
+      "InternetService": [
+        "DSL",
+        "Fiber optic",
+        "No"
+      ],
+      "OnlineSecurity": [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      "OnlineBackup": [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      "DeviceProtection": [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      "TechSupport": [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      "StreamingTV": [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      "StreamingMovies": [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      "Contract": [
+        "Month-to-month",
+        "One year",
+        "Two year"
+      ],
+      "PaperlessBilling": [
+        "No",
+        "Yes"
+      ],
+      "PaymentMethod": [
+        "Bank transfer (automatic)",
+        "Credit card (automatic)",
+        "Electronic check",
+        "Mailed check"
+      ]
+    },
+    "numeric": {
+      "tenure": {
+        "min": 0.0,
+        "max": 72.0
+      },
+      "MonthlyCharges": {
+        "min": 18.4,
+        "max": 118.75
+      },
+      "TotalCharges": {
+        "min": 0.0,
+        "max": 8684.8
+      }
+    }
+  },
+  "versions": {
+    "sklearn": "1.8.0",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4"
+  }
+}
